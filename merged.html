@@ -54,6 +54,17 @@ h2{margin:0 0 6px;font-size:22px;line-height:1.35;font-weight:800;letter-spacing
 .refs figcaption b{display:block;font-size:15px;color:var(--ink)}
 .refs figcaption em{font-style:normal;display:block;margin-top:6px;padding-top:6px;border-top:1px solid var(--line);color:var(--ink);font-weight:600}
 .refs .src{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:700;color:var(--blue);text-decoration:none}
+.star{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;max-width:1000px}
+@media(min-width:900px){.star{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.star .set{border:1px solid var(--line);border-radius:18px;padding:12px;background:#fff}
+.star .set.on{border:2px solid var(--blue)}
+.star .set b{display:block;font-size:16px;margin:0 0 2px}
+.star .set p{margin:0 0 10px;font-size:13.5px;color:var(--sub)}
+.star .tri{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.star .tri a{display:block;border-radius:8px;overflow:hidden;box-shadow:0 0 0 1px var(--line)}
+.star .tri img{display:block;width:100%;height:auto;aspect-ratio:148/210}
+.star .tri span{display:block;text-align:center;font-size:11.5px;font-weight:700;color:var(--muted);padding-top:4px}
+.star .dl{margin-top:10px}
 .dl{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .dl a{font-size:13.5px;font-weight:700;text-decoration:none;padding:8px 12px;border-radius:11px;background:var(--ink);color:#fff;box-shadow:none}
 .dl a.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
@@ -78,10 +89,10 @@ footer{padding:26px 0 48px;color:var(--muted);font-size:13px}
     <a class="back" href="drafts.html">← 시안 4가지로</a>
     <span class="kicker">이슈 #1286 · 사업성장연구소 소개 책자 최종본</span>
     <h1>인쇄용 최종본입니다.<br><em>이 파일 그대로 맡기면 됩니다.</em></h1>
-    <p class="lead"><b>5쪽 123타이어 사례를 고쳤습니다.</b> 매출 그래프에서 6년 전 자료를 빼고 5년 전부터 보여 드리며, 저희가 한 AI 검색 최적화(쌓인 문의로 FAQ를 채워 AI 검색에 노출되는 비율을 높인 일)를 전/후 한 줄로 더했습니다. 리뉴얼 후 1년 순매출 +24.6%(63.7억 → 79.3억 원)는 그대로입니다.</p>
+    <p class="lead"><b>우주 별자리 시안을 두 가지로 만들었습니다.</b> 흩어진 별(막연함) 사이를 01 진단부터 04 확인까지 이어, 가장 밝은 별 '다음 할 일'에 닿는 별자리입니다. 밤하늘(짙은 남색)과 지금 파랑 바탕 두 벌이고, 표지·2쪽 그림·뒤표지를 바꾼 8쪽 전체 인쇄 파일까지 만들어 두었습니다. 지금 인쇄용 최종본은 그대로 등고선 지도입니다.</p>
     <div class="get">
-      <a href="final/growth-lab-brochure-final-A5-print.pdf?v=20261021p">인쇄소용 PDF 받기<small>A5 8쪽 · 재단 여백 3mm 포함</small></a>
-      <a class="ghost" href="final/growth-lab-brochure-final-A4-office.pdf?v=20261021p">사무실 출력용 PDF<small>A4 2장 양면 → 반 접어 끼우기</small></a>
+      <a href="final/growth-lab-brochure-final-A5-print.pdf?v=20261021q">인쇄소용 PDF 받기<small>A5 8쪽 · 재단 여백 3mm 포함</small></a>
+      <a class="ghost" href="final/growth-lab-brochure-final-A4-office.pdf?v=20261021q">사무실 출력용 PDF<small>A4 2장 양면 → 반 접어 끼우기</small></a>
     </div>
     <p class="order"><b>인쇄소에 이렇게 말씀하세요</b>"A5 크기 8쪽 중철 책자, 양면 컬러입니다. 파일은 재단 여백 3mm가 들어간 PDF(154×216mm)이고, 종이는 스노우지 150g으로 표지·속지 같게 해 주세요. 수량은 50부입니다."<small>운영사도 A4 30부 출력을 지원하니, 50부면 행사 당일 나눠 드리고도 남습니다.</small></p>
   </div>
@@ -91,56 +102,80 @@ footer{padding:26px 0 48px;color:var(--muted);font-size:13px}
     <h2>최종본 8쪽</h2>
     <p class="desc">누르면 크게 열립니다. 폰에서는 옆으로 밀어 넘겨 보세요.</p>
     <div class="pages">
-      <a href="final/page1.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page1.jpg?v=20261021p" alt="최종본 1쪽" loading="lazy"><span>1 앞표지</span></a>
-      <a href="final/page2.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page2.jpg?v=20261021p" alt="최종본 2쪽" loading="lazy"><span>2 우리는 누구</span></a>
-      <a href="final/page3.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page3.jpg?v=20261021p" alt="최종본 3쪽" loading="lazy"><span>3 숫자로 보는 신뢰</span></a>
-      <a href="final/page4.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page4.jpg?v=20261021p" alt="최종본 4쪽" loading="lazy"><span>4 일하는 방식 · 광고 실험 표</span></a>
-      <a href="final/page5.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page5.jpg?v=20261021p" alt="최종본 5쪽" loading="lazy"><span>5 사례 123타이어</span></a>
-      <a href="final/page6.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page6.jpg?v=20261021p" alt="최종본 6쪽" loading="lazy"><span>6 사례 뽀뽀뜨</span></a>
-      <a href="final/page7.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page7.jpg?v=20261021p" alt="최종본 7쪽" loading="lazy"><span>7 포트폴리오</span></a>
-      <a href="final/page8.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page8.jpg?v=20261021p" alt="최종본 8쪽" loading="lazy"><span>8 뒤표지 · 상담</span></a>
+      <a href="final/page1.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page1.jpg?v=20261021q" alt="최종본 1쪽" loading="lazy"><span>1 앞표지</span></a>
+      <a href="final/page2.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page2.jpg?v=20261021q" alt="최종본 2쪽" loading="lazy"><span>2 우리는 누구</span></a>
+      <a href="final/page3.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page3.jpg?v=20261021q" alt="최종본 3쪽" loading="lazy"><span>3 숫자로 보는 신뢰</span></a>
+      <a href="final/page4.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page4.jpg?v=20261021q" alt="최종본 4쪽" loading="lazy"><span>4 일하는 방식 · 광고 실험 표</span></a>
+      <a href="final/page5.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page5.jpg?v=20261021q" alt="최종본 5쪽" loading="lazy"><span>5 사례 123타이어</span></a>
+      <a href="final/page6.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page6.jpg?v=20261021q" alt="최종본 6쪽" loading="lazy"><span>6 사례 뽀뽀뜨</span></a>
+      <a href="final/page7.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page7.jpg?v=20261021q" alt="최종본 7쪽" loading="lazy"><span>7 포트폴리오</span></a>
+      <a href="final/page8.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page8.jpg?v=20261021q" alt="최종본 8쪽" loading="lazy"><span>8 뒤표지 · 상담</span></a>
+    </div>
+  </section>
+  <section>
+    <h2>별자리 시안</h2>
+    <p class="desc">바뀐 곳은 표지·2쪽 그림·뒤표지뿐이고, 나머지 쪽은 최종본과 같습니다. 누르면 크게 열립니다.</p>
+    <div class="star">
+      <div class="set on"><b>D 별자리 · 밤하늘<i style="font-style:normal;font-size:11.5px;font-weight:800;color:#fff;background:var(--blue);border-radius:99px;padding:1px 8px;margin-left:6px;vertical-align:2px">우주 느낌 권장</i></b><p>짙은 남색 바탕에 별과 천구 눈금선. 우주 느낌이 가장 납니다.</p>
+        <div class="tri">
+          <div><a href="drafts/i/page1.jpg?v=20261021q" target="_blank" rel="noopener"><img src="drafts/i/page1.jpg?v=20261021q" alt="D 표지" loading="lazy"></a><span>표지</span></div>
+          <div><a href="drafts/i/page2.jpg?v=20261021q" target="_blank" rel="noopener"><img src="drafts/i/page2.jpg?v=20261021q" alt="D 2쪽" loading="lazy"></a><span>2쪽</span></div>
+          <div><a href="drafts/i/page8.jpg?v=20261021q" target="_blank" rel="noopener"><img src="drafts/i/page8.jpg?v=20261021q" alt="D 뒤표지" loading="lazy"></a><span>뒤표지</span></div>
+        </div>
+        <div class="dl"><a href="drafts/i/growth-lab-draft-i-A5-print.pdf?v=20261021q">D 인쇄용 PDF (A5 8쪽)</a><a class="ghost" href="drafts/i/growth-lab-draft-i-A4-office.pdf?v=20261021q">사무실 출력용 A4</a></div>
+      </div>
+      <div class="set"><b>E 별자리 · 파랑</b><p>지금 책자와 같은 파랑 바탕에 같은 별자리. 속지·뒤표지와 색이 가장 잘 이어집니다.</p>
+        <div class="tri">
+          <div><a href="drafts/j/page1.jpg?v=20261021q" target="_blank" rel="noopener"><img src="drafts/j/page1.jpg?v=20261021q" alt="E 표지" loading="lazy"></a><span>표지</span></div>
+          <div><a href="drafts/j/page2.jpg?v=20261021q" target="_blank" rel="noopener"><img src="drafts/j/page2.jpg?v=20261021q" alt="E 2쪽" loading="lazy"></a><span>2쪽</span></div>
+          <div><a href="drafts/j/page8.jpg?v=20261021q" target="_blank" rel="noopener"><img src="drafts/j/page8.jpg?v=20261021q" alt="E 뒤표지" loading="lazy"></a><span>뒤표지</span></div>
+        </div>
+        <div class="dl"><a href="drafts/j/growth-lab-draft-j-A5-print.pdf?v=20261021q">E 인쇄용 PDF (A5 8쪽)</a><a class="ghost" href="drafts/j/growth-lab-draft-j-A4-office.pdf?v=20261021q">사무실 출력용 A4</a></div>
+      </div>
     </div>
   </section>
   <section>
     <h2>바꾸기 전과 비교</h2>
     <p class="desc">위는 5쪽(123타이어) 지금과 바로 전, 아래는 표지 지금과 사람 그림 판입니다.</p>
     <div class="cmp">
-      <figure class="on"><a href="final/page5.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page5.jpg?v=20261021p" alt="지금 5쪽" loading="lazy"></a><figcaption><b>지금 5쪽<i>최종</i></b>그래프는 5년 전부터, 전/후에 AI 검색 최적화 한 줄 추가</figcaption></figure>
-      <figure><a href="final/prev7/page5.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/prev7/page5.jpg?v=20261021p" alt="바로 전 5쪽" loading="lazy"></a><figcaption><b>바로 전 5쪽</b>그래프에 6년 전 포함, 전/후 3줄</figcaption></figure>
+      <figure class="on"><a href="final/page5.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page5.jpg?v=20261021q" alt="지금 5쪽" loading="lazy"></a><figcaption><b>지금 5쪽<i>최종</i></b>그래프는 5년 전부터, 전/후에 AI 검색 최적화 한 줄 추가</figcaption></figure>
+      <figure><a href="final/prev7/page5.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/prev7/page5.jpg?v=20261021q" alt="바로 전 5쪽" loading="lazy"></a><figcaption><b>바로 전 5쪽</b>그래프에 6년 전 포함, 전/후 3줄</figcaption></figure>
     </div>
     <div class="cmp" style="margin-top:12px">
-      <figure class="on"><a href="final/page1.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page1.jpg?v=20261021p" alt="지금 앞표지" loading="lazy"></a><figcaption><b>지금 앞표지<i>최종</i></b>등고선 지도 위 한 줄 경로: 막연함 → 진단·결정·실행·확인 → 다음 할 일</figcaption></figure>
-      <figure><a href="final/prev5/page1.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/prev5/page1.jpg?v=20261021p" alt="사람 그림 앞표지" loading="lazy"></a><figcaption><b>사람 그림 표지</b>바로 전 판</figcaption></figure>
+      <figure class="on"><a href="final/page1.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page1.jpg?v=20261021q" alt="지금 앞표지" loading="lazy"></a><figcaption><b>지금 앞표지<i>최종</i></b>등고선 지도 위 한 줄 경로: 막연함 → 진단·결정·실행·확인 → 다음 할 일</figcaption></figure>
+      <figure><a href="final/prev5/page1.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/prev5/page1.jpg?v=20261021q" alt="사람 그림 앞표지" loading="lazy"></a><figcaption><b>사람 그림 표지</b>바로 전 판</figcaption></figure>
     </div>
   </section>
   <section>
     <h2>참고한 레퍼런스</h2>
     <p class="desc">손그림 티를 없애고 '설계한 그림'으로 보이게 하려고 아래 세 가지를 참고했습니다.</p>
     <div class="refs">
-      <figure><a class="im" href="premium-refs/ibm-line-style.jpg?v=20261021p" target="_blank" rel="noopener"><img src="premium-refs/ibm-line-style.jpg?v=20261021p" alt="IBM 디자인 언어 선 그림 예시" loading="lazy"></a><figcaption><b>IBM 디자인 언어 · 선 그림 규칙</b>맴도는 원이 한 줄로 뻗어 나가는 예시. 선 굵기를 몇 가지로만 정하고, 자로 잰 듯 정확하게 그립니다.<em>가져온 것: 손그림 대신 계산해서 그린 선, 굵기는 두 가지만</em></figcaption><a class="src" href="https://www.ibm.com/design/language/illustration/line-style/design/" target="_blank" rel="noopener">원본 열기 ↗</a></figure>
-      <figure><a class="im" href="premium-refs/dribbble-gasser-cultural-worlds.jpg?v=20261021p" target="_blank" rel="noopener"><img src="premium-refs/dribbble-gasser-cultural-worlds.jpg?v=20261021p" alt="등고선 책자 표지 예시" loading="lazy"></a><figcaption><b>그레고리 가서 · 책자 표지 'cultural worlds'</b>가는 등고선과 작은 지시선 주석만으로 만든 책자 표지. 그림 하나로 고급스러운 인상을 줍니다.<em>가져온 것: 등고선 지도, 점과 지시선으로 단 01~04 주석</em></figcaption><a class="src" href="https://dribbble.com/shots/3496545-cultural-worlds" target="_blank" rel="noopener">원본 열기 ↗</a></figure>
-      <figure><a class="im" href="pamphlet-refs/tossplace_1.jpg?v=20261021p" target="_blank" rel="noopener"><img src="pamphlet-refs/tossplace_1.jpg?v=20261021p" alt="토스플레이스 브로슈어 표지" loading="lazy" style="object-position:top"></a><figcaption><b>토스플레이스 사장님 브로슈어 표지</b>큰 제목 하나, 넓은 여백, 작은 문서명. 꾸밈을 줄여서 고급스럽게 보입니다.<em>가져온 것: 제목을 조금 가늘게, 위아래 여백은 넓게</em></figcaption><a class="src" href="https://static.toss.im/illusts-common/tossplace_brochure.pdf" target="_blank" rel="noopener">원본 열기 ↗</a></figure>
+      <figure><a class="im" href="premium-refs/ibm-line-style.jpg?v=20261021q" target="_blank" rel="noopener"><img src="premium-refs/ibm-line-style.jpg?v=20261021q" alt="IBM 디자인 언어 선 그림 예시" loading="lazy"></a><figcaption><b>IBM 디자인 언어 · 선 그림 규칙</b>맴도는 원이 한 줄로 뻗어 나가는 예시. 선 굵기를 몇 가지로만 정하고, 자로 잰 듯 정확하게 그립니다.<em>가져온 것: 손그림 대신 계산해서 그린 선, 굵기는 두 가지만</em></figcaption><a class="src" href="https://www.ibm.com/design/language/illustration/line-style/design/" target="_blank" rel="noopener">원본 열기 ↗</a></figure>
+      <figure><a class="im" href="premium-refs/dribbble-gasser-cultural-worlds.jpg?v=20261021q" target="_blank" rel="noopener"><img src="premium-refs/dribbble-gasser-cultural-worlds.jpg?v=20261021q" alt="등고선 책자 표지 예시" loading="lazy"></a><figcaption><b>그레고리 가서 · 책자 표지 'cultural worlds'</b>가는 등고선과 작은 지시선 주석만으로 만든 책자 표지. 그림 하나로 고급스러운 인상을 줍니다.<em>가져온 것: 등고선 지도, 점과 지시선으로 단 01~04 주석</em></figcaption><a class="src" href="https://dribbble.com/shots/3496545-cultural-worlds" target="_blank" rel="noopener">원본 열기 ↗</a></figure>
+      <figure><a class="im" href="pamphlet-refs/tossplace_1.jpg?v=20261021q" target="_blank" rel="noopener"><img src="pamphlet-refs/tossplace_1.jpg?v=20261021q" alt="토스플레이스 브로슈어 표지" loading="lazy" style="object-position:top"></a><figcaption><b>토스플레이스 사장님 브로슈어 표지</b>큰 제목 하나, 넓은 여백, 작은 문서명. 꾸밈을 줄여서 고급스럽게 보입니다.<em>가져온 것: 제목을 조금 가늘게, 위아래 여백은 넓게</em></figcaption><a class="src" href="https://static.toss.im/illusts-common/tossplace_brochure.pdf" target="_blank" rel="noopener">원본 열기 ↗</a></figure>
     </div>
   </section>
   <section>
-    <h2>다른 표지 후보</h2>
-    <p class="desc">지도 대신 아래 안이 낫다면 B·C 중 골라 말씀만 해 주세요. 바로 바꿔서 인쇄 파일을 다시 올립니다.</p>
+    <h2>표지 후보 한눈에</h2>
+    <p class="desc">A가 지금 인쇄용 최종본입니다. 다른 표지로 가려면 글자 하나(D·E·B·C)만 말씀해 주세요. 그 표지로 인쇄 파일을 바로 바꿉니다.</p>
     <div class="cmp three">
-      <figure class="on"><a href="final/page1.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/page1.jpg?v=20261021p" alt="A 등고선 지도 표지" loading="lazy"></a><figcaption><b>A 등고선 지도<i>권장·지금 최종</i></b>막연함에서 다음 할 일까지 오르는 길</figcaption></figure>
-      <figure><a href="final/alt/cover-spiral.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/alt/cover-spiral.jpg?v=20261021p" alt="B 나선 표지" loading="lazy"></a><figcaption><b>B 나선이 한 줄로</b>맴돌던 고민이 풀려 네 단계로 이어짐</figcaption></figure>
-      <figure><a href="final/alt/cover-spiral-big.jpg?v=20261021p" target="_blank" rel="noopener"><img src="final/alt/cover-spiral-big.jpg?v=20261021p" alt="C 큰 나선 표지" loading="lazy"></a><figcaption><b>C 큰 나선</b>나선 하나를 크게, 글자는 더 적게</figcaption></figure>
+      <figure class="on"><a href="final/page1.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/page1.jpg?v=20261021q" alt="A 등고선 지도 표지" loading="lazy"></a><figcaption><b>A 등고선 지도<i>지금 최종</i></b>막연함에서 다음 할 일까지 오르는 길</figcaption></figure>
+      <figure><a href="drafts/i/page1.jpg?v=20261021q" target="_blank" rel="noopener"><img src="drafts/i/page1.jpg?v=20261021q" alt="D 별자리 밤하늘 표지" loading="lazy"></a><figcaption><b>D 별자리 · 밤하늘<i>새 시안</i></b>흩어진 별을 이어 가장 밝은 별로</figcaption></figure>
+      <figure><a href="drafts/j/page1.jpg?v=20261021q" target="_blank" rel="noopener"><img src="drafts/j/page1.jpg?v=20261021q" alt="E 별자리 파랑 표지" loading="lazy"></a><figcaption><b>E 별자리 · 파랑<i>새 시안</i></b>D와 같은 별자리, 지금 파랑 바탕</figcaption></figure>
+      <figure><a href="final/alt/cover-spiral.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/alt/cover-spiral.jpg?v=20261021q" alt="B 나선 표지" loading="lazy"></a><figcaption><b>B 나선이 한 줄로</b>맴돌던 고민이 풀려 네 단계로 이어짐</figcaption></figure>
+      <figure><a href="final/alt/cover-spiral-big.jpg?v=20261021q" target="_blank" rel="noopener"><img src="final/alt/cover-spiral-big.jpg?v=20261021q" alt="C 큰 나선 표지" loading="lazy"></a><figcaption><b>C 큰 나선</b>나선 하나를 크게, 글자는 더 적게</figcaption></figure>
     </div>
   </section>
   <section>
     <h2>무엇이 달라졌나</h2>
-    <p class="desc">이번에는 5쪽만 바뀌었습니다. 아래 첫 세 칸이 이번 변경입니다.</p>
+    <p class="desc">이번에는 최종본을 바꾸지 않고 별자리 시안 두 벌을 더했습니다.</p>
     <div class="changes">
-      <div><b>6년 전 자료 뺌</b>매출 그래프를 5년 전부터 리뉴얼 후까지 6개 막대로. 리뉴얼 후만 파랑이고 값은 5년 전·1년 전·리뉴얼 후만 적었습니다</div>
-      <div><b>AI 검색 최적화 한 줄</b>전: FAQ가 비어 있어 AI가 참고할 답이 없음 → 후: 쌓인 문의로 FAQ를 채워 AI 검색 노출 비율을 높임</div>
-      <div><b>전/후 표를 한 줄씩</b>'전·후' 표시는 맨 위에 한 번만 두고, 네 줄 모두 한 줄로 읽히게 정리했습니다</div>
-      <div><b>매출 숫자는 그대로</b>리뉴얼 후 1년 순매출 63.7억 → 79.3억 원(+24.6%), 주문 수 +22.2%</div>
-      <div><b>그대로 둔 것</b>5쪽 제목·휴대폰 화면·요금 한 줄, 등고선 지도 표지, 나머지 7쪽</div>
-      <div><b>인쇄 확인</b>A5 재단 여백 3mm 포함 154×216mm, 8쪽 모두 글자 넘침 없음, QR 7개 모두 인식</div>
+      <div><b>별자리 시안 D·E</b>흩어진 별(막연함) → 01 진단 · 02 결정 · 03 실행 · 04 확인 → 가장 밝은 별 '다음 할 일'</div>
+      <div><b>D 밤하늘, E 파랑</b>D는 짙은 남색 바탕으로 우주 느낌을, E는 지금 파랑 바탕으로 속지와 색을 맞췄습니다</div>
+      <div><b>천구 눈금선</b>별 지도처럼 가는 원호와 눈금을 옅게 깔고, 이름표는 지도 표지와 같은 점·지시선 방식</div>
+      <div><b>2쪽·뒤표지도 별로</b>2쪽 '막연함 → 다음 할 일' 그림을 별자리로, 뒤표지 오른쪽 위에 옅은 별과 원호</div>
+      <div><b>최종본은 그대로</b>인쇄용 최종본은 등고선 지도(A). 3~7쪽 내용은 세 시안 모두 같습니다</div>
+      <div><b>인쇄 확인</b>D·E 모두 A5 재단 여백 3mm 포함 154×216mm, 그림은 선과 점(벡터), QR 7개 모두 인식</div>
     </div>
   </section>
 </main>
