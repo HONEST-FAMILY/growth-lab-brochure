@@ -43,6 +43,17 @@ h2{margin:0 0 6px;font-size:22px;line-height:1.35;font-weight:800;letter-spacing
 .cmp figcaption{margin-top:8px;font-size:14px;color:var(--sub);line-height:1.5}
 .cmp figcaption b{display:block;font-size:15px;color:var(--ink)}
 .cmp figcaption i{font-style:normal;display:inline-block;font-size:11.5px;font-weight:800;color:#fff;background:var(--blue);border-radius:99px;padding:1px 8px;margin-left:4px;vertical-align:2px}
+.cmp.three{grid-template-columns:repeat(2,minmax(0,1fr));max-width:1000px}
+@media(min-width:760px){.cmp.three{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.refs{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;max-width:1000px}
+@media(min-width:760px){.refs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.refs figure{margin:0;border:1px solid var(--line);border-radius:16px;padding:10px;background:#fff;display:flex;flex-direction:column}
+.refs .im{display:block;border-radius:8px;overflow:hidden;background:#f2f4f6;aspect-ratio:4/3}
+.refs .im img{display:block;width:100%;height:100%;object-fit:cover}
+.refs figcaption{margin-top:8px;font-size:14px;color:var(--sub);line-height:1.5;flex:1}
+.refs figcaption b{display:block;font-size:15px;color:var(--ink)}
+.refs figcaption em{font-style:normal;display:block;margin-top:6px;padding-top:6px;border-top:1px solid var(--line);color:var(--ink);font-weight:600}
+.refs .src{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:700;color:var(--blue);text-decoration:none}
 .dl{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .dl a{font-size:13.5px;font-weight:700;text-decoration:none;padding:8px 12px;border-radius:11px;background:var(--ink);color:#fff;box-shadow:none}
 .dl a.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
@@ -67,10 +78,10 @@ footer{padding:26px 0 48px;color:var(--muted);font-size:13px}
     <a class="back" href="drafts.html">← 시안 4가지로</a>
     <span class="kicker">이슈 #1286 · 사업성장연구소 소개 책자 최종본</span>
     <h1>인쇄용 최종본입니다.<br><em>이 파일 그대로 맡기면 됩니다.</em></h1>
-    <p class="lead"><b>3쪽 숫자와 함께한 곳을 고쳤습니다.</b> '5영업일'은 '10영업일'로, '1팀'은 '올인원'으로 바꿨고, '대기업·중견기업·스타트업…' 대신 실제로 함께한 곳 여섯 곳의 이름을 적었습니다. 사람 선 그림 표지와 나머지 쪽은 그대로입니다.</p>
+    <p class="lead"><b>표지를 고급스럽게 다시 만들었습니다.</b> 손으로 그린 사람 그림을 빼고, 가는 등고선 지도 위에 '막연함'에서 출발해 01 진단 · 02 결정 · 03 실행 · 04 확인을 거쳐 '다음 할 일' 꼭대기에 닿는 한 줄 경로를 넣었습니다. 2쪽 그림과 뒤표지도 같은 선으로 맞췄고, 3~7쪽 내용은 그대로입니다.</p>
     <div class="get">
-      <a href="final/growth-lab-brochure-final-A5-print.pdf?v=20261021k">인쇄소용 PDF 받기<small>A5 8쪽 · 재단 여백 3mm 포함</small></a>
-      <a class="ghost" href="final/growth-lab-brochure-final-A4-office.pdf?v=20261021k">사무실 출력용 PDF<small>A4 2장 양면 → 반 접어 끼우기</small></a>
+      <a href="final/growth-lab-brochure-final-A5-print.pdf?v=20261021m">인쇄소용 PDF 받기<small>A5 8쪽 · 재단 여백 3mm 포함</small></a>
+      <a class="ghost" href="final/growth-lab-brochure-final-A4-office.pdf?v=20261021m">사무실 출력용 PDF<small>A4 2장 양면 → 반 접어 끼우기</small></a>
     </div>
     <p class="order"><b>인쇄소에 이렇게 말씀하세요</b>"A5 크기 8쪽 중철 책자, 양면 컬러입니다. 파일은 재단 여백 3mm가 들어간 PDF(154×216mm)이고, 종이는 스노우지 150g으로 표지·속지 같게 해 주세요. 수량은 50부입니다."<small>운영사도 A4 30부 출력을 지원하니, 50부면 행사 당일 나눠 드리고도 남습니다.</small></p>
   </div>
@@ -80,40 +91,58 @@ footer{padding:26px 0 48px;color:var(--muted);font-size:13px}
     <h2>최종본 8쪽</h2>
     <p class="desc">누르면 크게 열립니다. 폰에서는 옆으로 밀어 넘겨 보세요.</p>
     <div class="pages">
-      <a href="final/page1.jpg?v=20261021k" target="_blank" rel="noopener"><img src="final/page1.jpg?v=20261021k" alt="최종본 1쪽" loading="lazy"><span>1 앞표지</span></a>
-      <a href="final/page2.jpg?v=20261021k" target="_blank" rel="noopener"><img src="final/page2.jpg?v=20261021k" alt="최종본 2쪽" loading="lazy"><span>2 우리는 누구</span></a>
-      <a href="final/page3.jpg?v=20261021k" target="_blank" rel="noopener"><img src="final/page3.jpg?v=20261021k" alt="최종본 3쪽" loading="lazy"><span>3 숫자로 보는 신뢰</span></a>
-      <a href="final/page4.jpg?v=20261021k" target="_blank" rel="noopener"><img src="final/page4.jpg?v=20261021k" alt="최종본 4쪽" loading="lazy"><span>4 일하는 방식 · 광고 실험 표</span></a>
-      <a href="final/page5.jpg?v=20261021k" target="_blank" rel="noopener"><img src="final/page5.jpg?v=20261021k" alt="최종본 5쪽" loading="lazy"><span>5 사례 123타이어</span></a>
-      <a href="final/page6.jpg?v=20261021k" target="_blank" rel="noopener"><img src="final/page6.jpg?v=20261021k" alt="최종본 6쪽" loading="lazy"><span>6 사례 뽀뽀뜨</span></a>
-      <a href="final/page7.jpg?v=20261021k" target="_blank" rel="noopener"><img src="final/page7.jpg?v=20261021k" alt="최종본 7쪽" loading="lazy"><span>7 포트폴리오</span></a>
-      <a href="final/page8.jpg?v=20261021k" target="_blank" rel="noopener"><img src="final/page8.jpg?v=20261021k" alt="최종본 8쪽" loading="lazy"><span>8 뒤표지 · 상담</span></a>
+      <a href="final/page1.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/page1.jpg?v=20261021m" alt="최종본 1쪽" loading="lazy"><span>1 앞표지</span></a>
+      <a href="final/page2.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/page2.jpg?v=20261021m" alt="최종본 2쪽" loading="lazy"><span>2 우리는 누구</span></a>
+      <a href="final/page3.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/page3.jpg?v=20261021m" alt="최종본 3쪽" loading="lazy"><span>3 숫자로 보는 신뢰</span></a>
+      <a href="final/page4.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/page4.jpg?v=20261021m" alt="최종본 4쪽" loading="lazy"><span>4 일하는 방식 · 광고 실험 표</span></a>
+      <a href="final/page5.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/page5.jpg?v=20261021m" alt="최종본 5쪽" loading="lazy"><span>5 사례 123타이어</span></a>
+      <a href="final/page6.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/page6.jpg?v=20261021m" alt="최종본 6쪽" loading="lazy"><span>6 사례 뽀뽀뜨</span></a>
+      <a href="final/page7.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/page7.jpg?v=20261021m" alt="최종본 7쪽" loading="lazy"><span>7 포트폴리오</span></a>
+      <a href="final/page8.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/page8.jpg?v=20261021m" alt="최종본 8쪽" loading="lazy"><span>8 뒤표지 · 상담</span></a>
     </div>
   </section>
   <section>
     <h2>바꾸기 전과 비교</h2>
-    <p class="desc">왼쪽이 지금 3쪽, 오른쪽이 바로 전 3쪽입니다.</p>
+    <p class="desc">왼쪽이 지금 표지, 오른쪽이 바로 전 표지(사람 선 그림)입니다.</p>
     <div class="cmp">
-      <figure class="on"><a href="final/page3.jpg?v=20261021k" target="_blank" rel="noopener"><img src="final/page3.jpg?v=20261021k" alt="지금 3쪽" loading="lazy"></a><figcaption><b>지금 3쪽<i>최종</i></b>10영업일 · 올인원 · 함께해 온 곳 이름 6곳</figcaption></figure>
-      <figure><a href="final/prev4/page3.jpg?v=20261021k" target="_blank" rel="noopener"><img src="final/prev4/page3.jpg?v=20261021k" alt="바로 전 3쪽" loading="lazy"></a><figcaption><b>바로 전 3쪽</b>5영업일 · 1팀 · 대기업·중견기업… 문장과 같은 말 태그</figcaption></figure>
+      <figure class="on"><a href="final/page1.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/page1.jpg?v=20261021m" alt="지금 앞표지" loading="lazy"></a><figcaption><b>지금 앞표지<i>최종</i></b>등고선 지도 위 한 줄 경로: 막연함 → 진단·결정·실행·확인 → 다음 할 일</figcaption></figure>
+      <figure><a href="final/prev5/page1.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/prev5/page1.jpg?v=20261021m" alt="바로 전 앞표지" loading="lazy"></a><figcaption><b>바로 전 표지</b>사람 옆얼굴 선 그림</figcaption></figure>
+    </div>
+  </section>
+  <section>
+    <h2>참고한 레퍼런스</h2>
+    <p class="desc">손그림 티를 없애고 '설계한 그림'으로 보이게 하려고 아래 세 가지를 참고했습니다.</p>
+    <div class="refs">
+      <figure><a class="im" href="premium-refs/ibm-line-style.jpg?v=20261021m" target="_blank" rel="noopener"><img src="premium-refs/ibm-line-style.jpg?v=20261021m" alt="IBM 디자인 언어 선 그림 예시" loading="lazy"></a><figcaption><b>IBM 디자인 언어 · 선 그림 규칙</b>맴도는 원이 한 줄로 뻗어 나가는 예시. 선 굵기를 몇 가지로만 정하고, 자로 잰 듯 정확하게 그립니다.<em>가져온 것: 손그림 대신 계산해서 그린 선, 굵기는 두 가지만</em></figcaption><a class="src" href="https://www.ibm.com/design/language/illustration/line-style/design/" target="_blank" rel="noopener">원본 열기 ↗</a></figure>
+      <figure><a class="im" href="premium-refs/dribbble-gasser-cultural-worlds.jpg?v=20261021m" target="_blank" rel="noopener"><img src="premium-refs/dribbble-gasser-cultural-worlds.jpg?v=20261021m" alt="등고선 책자 표지 예시" loading="lazy"></a><figcaption><b>그레고리 가서 · 책자 표지 'cultural worlds'</b>가는 등고선과 작은 지시선 주석만으로 만든 책자 표지. 그림 하나로 고급스러운 인상을 줍니다.<em>가져온 것: 등고선 지도, 점과 지시선으로 단 01~04 주석</em></figcaption><a class="src" href="https://dribbble.com/shots/3496545-cultural-worlds" target="_blank" rel="noopener">원본 열기 ↗</a></figure>
+      <figure><a class="im" href="pamphlet-refs/tossplace_1.jpg?v=20261021m" target="_blank" rel="noopener"><img src="pamphlet-refs/tossplace_1.jpg?v=20261021m" alt="토스플레이스 브로슈어 표지" loading="lazy" style="object-position:top"></a><figcaption><b>토스플레이스 사장님 브로슈어 표지</b>큰 제목 하나, 넓은 여백, 작은 문서명. 꾸밈을 줄여서 고급스럽게 보입니다.<em>가져온 것: 제목을 조금 가늘게, 위아래 여백은 넓게</em></figcaption><a class="src" href="https://static.toss.im/illusts-common/tossplace_brochure.pdf" target="_blank" rel="noopener">원본 열기 ↗</a></figure>
+    </div>
+  </section>
+  <section>
+    <h2>다른 표지 후보</h2>
+    <p class="desc">지도 대신 아래 안이 낫다면 B·C 중 골라 말씀만 해 주세요. 바로 바꿔서 인쇄 파일을 다시 올립니다.</p>
+    <div class="cmp three">
+      <figure class="on"><a href="final/page1.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/page1.jpg?v=20261021m" alt="A 등고선 지도 표지" loading="lazy"></a><figcaption><b>A 등고선 지도<i>권장·지금 최종</i></b>막연함에서 다음 할 일까지 오르는 길</figcaption></figure>
+      <figure><a href="final/alt/cover-spiral.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/alt/cover-spiral.jpg?v=20261021m" alt="B 나선 표지" loading="lazy"></a><figcaption><b>B 나선이 한 줄로</b>맴돌던 고민이 풀려 네 단계로 이어짐</figcaption></figure>
+      <figure><a href="final/alt/cover-spiral-big.jpg?v=20261021m" target="_blank" rel="noopener"><img src="final/alt/cover-spiral-big.jpg?v=20261021m" alt="C 큰 나선 표지" loading="lazy"></a><figcaption><b>C 큰 나선</b>나선 하나를 크게, 글자는 더 적게</figcaption></figure>
     </div>
   </section>
   <section>
     <h2>무엇이 달라졌나</h2>
-    <p class="desc">3쪽 글자를 바꿨고, 디자인은 그대로입니다.</p>
+    <p class="desc">그림과 표지 글자만 다듬었고, 3~7쪽 내용은 그대로입니다.</p>
     <div class="changes">
-      <div><b>5영업일 → 10영업일</b>완료본 또는 초안을 보여 드리는 기간을 10영업일로 적었습니다</div>
-      <div><b>1팀 → 올인원</b>'기획부터 마케팅까지' 카드의 큰 글씨가 '올인원'입니다</div>
-      <div><b>함께해 온 곳 = 실제 이름</b>롯데카드 · 흙표흙침대 · 플라워119 · 글로벌드림캠퍼스 · 한림대학교 · 덕성여자대학교, 아래 같은 말 태그는 넣지 않았습니다</div>
-      <div><b>7쪽 같은 문장도 뺐습니다</b>포트폴리오 설명에 있던 '대기업, 중견기업…' 문장을 빼고 'QR을 찍으면 각 프로젝트 이야기로 갑니다'만 남겼습니다</div>
-      <div><b>표지·나머지 쪽은 그대로</b>사람 선 그림 표지, 1안 뒤표지, 4쪽 뽀뽀뜨 광고 표(결과는 '예시')</div>
-      <div><b>인쇄 확인</b>A5 재단 여백 3mm 포함, 8쪽 모두 글자 넘침 없음, QR 7개 모두 인식</div>
+      <div><b>사람 그림 → 등고선 지도</b>손으로 그린 듯한 옆얼굴을 빼고, 가는 등고선 위에 오르는 길 한 줄을 그렸습니다</div>
+      <div><b>01~04 주석</b>지도처럼 점과 가는 지시선으로 진단·결정·실행·확인을 달았습니다(4쪽 4단계와 같은 이름)</div>
+      <div><b>제목은 조금 가늘게</b>가장 굵은 글씨를 한 단계 낮추고 줄 간격을 넓혀 덜 투박하게</div>
+      <div><b>2쪽 그림·뒤표지도 같은 선</b>2쪽 '막연함 → 다음 할 일' 그림과 뒤표지 오른쪽 위에 같은 등고선을 옅게</div>
+      <div><b>그대로 둔 것</b>1안 표지 문구, 3~7쪽 내용(10영업일·올인원·함께해 온 곳 6곳), 1안 뒤표지 구성과 QR</div>
+      <div><b>인쇄 확인</b>A5 재단 여백 3mm 포함 154×216mm, 그림은 모두 선(벡터)이라 확대해도 깨지지 않음, QR 7개 모두 인식</div>
     </div>
   </section>
 </main>
 <footer class="wrap">
   <div class="links"><a href="drafts.html">시안 4가지 다시 보기</a><a class="ghost" href="brochure.html">예전 책자 v3</a><a class="ghost" href="pamphlets.html">팜플렛 레퍼런스 15개</a></div>
-  <p>들어간 화면과 숫자는 모두 저희 실제 프로젝트입니다. 광고 표의 결과는 과정을 보여 드리기 위한 예시로, 책자에도 그렇게 적었습니다.</p>
+  <p>참고한 레퍼런스 화면의 저작권은 각 운영사·작가에게 있으며 검토용으로만 보여 드립니다. 들어간 화면과 숫자는 모두 저희 실제 프로젝트입니다. 광고 표의 결과는 과정을 보여 드리기 위한 예시로, 책자에도 그렇게 적었습니다.</p>
 </footer>
 </body>
 </html>
