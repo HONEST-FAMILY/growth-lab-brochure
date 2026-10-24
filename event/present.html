@@ -43,11 +43,11 @@ select{max-width:420px;flex:1;min-width:0}
 <div class="viewer" id="viewer">
   <header>
     <div><h1>사업성장연구소</h1><p>설치 없이 바로 발표 · 기존 15장</p></div>
-    <a class="link" href="deck.pdf?v=20261024restore15" download="어니스트패밀리_사업홍보발표.pdf">PDF 저장</a>
+    <a class="link" href="deck.pdf?v=20261024mealplan" download="어니스트패밀리_사업홍보발표.pdf">PDF 저장</a>
   </header>
   <main id="stage" tabindex="0" aria-label="발표 슬라이드. 좌우 방향키로 장을 넘길 수 있습니다.">
-    <img id="slide" src="slides/slide-01.png?v=20261024restore15" alt="1장 회사 소개" width="1920" height="1080" draggable="false">
-    <div class="error" id="error" role="alert" hidden>슬라이드를 불러오지 못했습니다.<br>인터넷 연결을 확인하거나 <a href="deck.pdf?v=20261024restore15">PDF로 열어 주세요.</a></div>
+    <img id="slide" src="slides/slide-01.png?v=20261024mealplan" alt="1장 회사 소개" width="1920" height="1080" draggable="false">
+    <div class="error" id="error" role="alert" hidden>슬라이드를 불러오지 못했습니다.<br>인터넷 연결을 확인하거나 <a href="deck.pdf?v=20261024mealplan">PDF로 열어 주세요.</a></div>
   </main>
   <footer>
     <nav class="controls" aria-label="발표 조작">
@@ -61,7 +61,7 @@ select{max-width:420px;flex:1;min-width:0}
     <p class="status" id="status" role="status" hidden></p>
   </footer>
 </div>
-<noscript><p>발표자료는 <a href="deck.pdf?v=20261024restore15">PDF로도 열 수 있습니다.</a></p></noscript>
+<noscript><p>발표자료는 <a href="deck.pdf?v=20261024mealplan">PDF로도 열 수 있습니다.</a></p></noscript>
 <script>
 const titles=['회사 소개','외주 제작사로 쌓아 온 경험','출시 후에 마주한 현실','만들고 나면 그제서야 시작','여러 가설로 마케팅하기','개선하고, 다시 알리기','사업성장연구소','월 구독으로 함께 진행하는 방식','작게 시작하는 두 가지 이유','123타이어 · 구매 과정과 연매출 변화','블루프렙 · 해외 시장과 초기 성장','뽀뽀뜨 · 재구매 가설 실험','뽀뽀뜨 · 엄마의 편의를 위한 실험','지속적인 실행을 약속합니다','문의 및 마무리'];
 const viewer=document.getElementById('viewer');
@@ -77,7 +77,7 @@ const error=document.getElementById('error');
 let current=0;
 let presenting=false;
 titles.forEach((title,index)=>pages.add(new Option(`${index+1}. ${title}`,String(index))));
-function slideUrl(index){return `slides/slide-${String(index+1).padStart(2,'0')}.png?v=20261024restore15`}
+function slideUrl(index){return `slides/slide-${String(index+1).padStart(2,'0')}.png?v=20261024mealplan`}
 function show(index){
   current=Math.max(0,Math.min(titles.length-1,index));
   error.hidden=true;
