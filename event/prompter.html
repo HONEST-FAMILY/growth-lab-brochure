@@ -35,7 +35,7 @@ h1{margin:0 0 6px;font-size:24px;font-weight:800;letter-spacing:-.03em}
 .scene:last-child{min-height:calc(100svh - var(--toolbar-height))}
 .scene-heading{position:sticky;top:var(--toolbar-height);z-index:5;display:flex;align-items:center;gap:20px;background:#edf4ff;border-top:6px solid var(--blue);border-bottom:1px solid #d1e1fb;padding:20px 24px}
 .scene-number{flex-shrink:0;display:flex;align-items:baseline;gap:6px;color:#1b64da;font-variant-numeric:tabular-nums}
-.scene-number strong{font-size:44px;font-weight:800;line-height:1}
+.scene-number strong{display:flex;align-items:center;justify-content:center;min-width:96px;height:68px;padding:0 12px;border-radius:12px;background:#1b64da;color:#fff;font-size:52px;font-weight:800;line-height:1}
 .scene-number span{font-size:15px;font-weight:700;white-space:nowrap}
 h2{margin:0;font-size:27px;line-height:1.35;font-weight:800;letter-spacing:-.025em}
 .speech{padding:28px 8px 12px;font-size:var(--reading-size);line-height:1.8;font-weight:600;letter-spacing:-.018em}
@@ -46,7 +46,7 @@ h2{margin:0;font-size:27px;line-height:1.35;font-weight:800;letter-spacing:-.025
 .end{margin:32px 0 0;padding:24px;background:#edf4ff;color:#1b64da;font-size:22px;font-weight:800;text-align:center;border-radius:12px}
 footer.wrap{padding-bottom:max(48px,env(safe-area-inset-bottom));display:flex;flex-wrap:wrap;gap:12px}
 footer a{padding:14px 18px;border:1px solid var(--line);border-radius:12px;font-size:16px;font-weight:700;text-decoration:none}
-@media(max-width:600px){.toolbar{padding:10px 16px}.controls{flex-wrap:wrap;gap:8px}.scene-control{flex-basis:100%}.size-control{margin-left:auto}.size-control button{min-height:44px}.wrap{padding:0 18px}.intro{padding-top:18px;padding-bottom:20px}.scene-heading{gap:12px;padding:16px 14px}.scene-number{display:block}.scene-number strong{display:block;font-size:36px}.scene-number span{font-size:13px}h2{font-size:22px}.speech{padding:24px 2px 12px}.next{padding:16px;font-size:16px}.scene{margin-bottom:48px}}
+@media(max-width:600px){.toolbar{padding:10px 16px}.controls{flex-wrap:wrap;gap:8px}.scene-control{flex-basis:100%}.size-control{margin-left:auto}.size-control button{min-height:44px}.wrap{padding:0 18px}.intro{padding-top:18px;padding-bottom:20px}.scene-heading{gap:12px;padding:16px 14px}.scene-number{display:block}.scene-number strong{min-width:76px;height:56px;font-size:40px}.scene-number span{font-size:13px}h2{font-size:22px}.speech{padding:24px 2px 12px}.next{padding:16px;font-size:16px}.scene{margin-bottom:48px}}
 @media print{.toolbar,.intro p,.next,footer{display:none}.scene-heading{position:static}.scene{break-before:page;margin:0}.scene:first-child{break-before:auto}.speech{font-size:22px}.wrap{padding:0}}
 </style>
 </head>
@@ -253,8 +253,8 @@ footer a{padding:14px 18px;border:1px solid var(--line);border-radius:12px;font-
 </main>
 <footer class="wrap">
   <a href="#scene-01">처음으로</a>
-  <a href="deck.pdf?v=20261024closing" target="_blank" rel="noopener">노트북 발표자료 열기</a>
-  <a href="deck-script.txt?v=20261024closing" download="어니스트패밀리_발표대본.txt">대본 텍스트 받기</a>
+  <a href="deck.pdf?v=20261024numbers" target="_blank" rel="noopener">노트북 발표자료 열기</a>
+  <a href="deck-script.txt?v=20261024numbers" download="어니스트패밀리_발표대본.txt">대본 텍스트 받기</a>
   <a href="../event.html#script-writing">행사 자료·대본 작성용 프롬프트</a>
 </footer>
 <script>
